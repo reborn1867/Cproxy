@@ -36,7 +36,7 @@ spec:
           - "./reverse-proxy"
           args:
           - -host=
-          - -remote-host=api.reg.i517651-gcp.gcp.di-dev.hanacloud.ondemand.com
+          - -remote-host=api.i517651-gcp-reg.di-dev.internal.canary.k8s.ondemand.com
           - -remote-port=443
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
